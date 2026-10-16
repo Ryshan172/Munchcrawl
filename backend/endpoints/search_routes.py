@@ -1,6 +1,7 @@
 import os
 from fastapi import APIRouter, HTTPException
-from interfaces.query_interfaces import Query
+from interfaces.query_interfaces import SearchQuery, SearchResponse
+
 
 """
 Where endpoints related to searches should go
