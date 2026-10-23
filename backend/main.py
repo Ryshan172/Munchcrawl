@@ -1,7 +1,6 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from endpoints.chat_routes import router as chat_router
-from endpoints.database_routes import router as database_router
+from endpoints.search_routes import router as search_router
 
 
 app = FastAPI()
@@ -16,5 +15,4 @@ app.add_middleware(
 )
 
 # Include routes
-app.include_router(chat_router)
-app.include_router(database_router)
+app.include_router(search_router)

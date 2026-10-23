@@ -22,3 +22,15 @@ def test_endpoint():
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"Error running test: {e}")
 
+
+#--------------------- CORE SEARCH ENDPOINTS -------------------------
+
+@router.post("/cravings-search")
+def search_query(request: SearchQuery):
+    try:
+        return {
+            "message": "success"
+        }
+
+    except Exception as e:
+            raise HTTPException(status_code=500, detail=f"Error running search: {e}")
