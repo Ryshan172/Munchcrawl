@@ -61,7 +61,11 @@ def process_cravings(cravings_list: list):
     return "Okay"
 
 
-
+def process_flavour_maps():
+    """
+    Inputs:
+        - 
+    """
 
 
 def handle_cravings_search(query: SearchQuery):
